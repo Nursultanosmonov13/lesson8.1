@@ -12,10 +12,10 @@ public class RPG_Game {
         Medic doc = new Medic(220, 5, 15);
         Berserk berserk = new Berserk(240, 10);
         Magic magic = new Magic(250, 25);
-        //Medic assistant = new Medic(260, 10, 5);
+        Medic assistant = new Medic(260, 10, 5);
 
         //Hero[] heroes = {warrior, doc, berserk, magic, assistant};
-        Hero[] heroes = {berserk,magic};//{berserk, doc,warrior};
+        Hero[] heroes = {berserk,magic, doc,assistant,warrior};//{berserk, doc,warrior};
 
         printStatistics(boss, heroes);
         while (!isGameFinished(boss, heroes)) {
